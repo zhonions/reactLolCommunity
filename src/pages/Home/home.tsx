@@ -1,11 +1,13 @@
+import Navbar from "../../components/Navbar/Navbar";
 import Slideshow from "../../components/SlideShow/SlideShow";
 
-const HomePage = () => {
+const Home = () => {
   return (
     <>
       <Slideshow />
+      <Navbar />
     </>
   );
 };
 
-export default HomePage;
+export default Home;

@@ -1,11 +1,11 @@
 import Slideshow from "../../components/SlideShow/SlideShow";
 
-const ToornamentTeams = () => {
+const Tournament = () => {
   return (
     <>
-      <h1>Toornament Teams</h1>
+      <h1>Toornament</h1>
     </>
   );
 };
 
-export default ToornamentTeams;
+export default Tournament;

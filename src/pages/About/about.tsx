@@ -1,6 +1,6 @@
 import Slideshow from "../../components/SlideShow/SlideShow";
 
-const AboutPage = () => {
+const About = () => {
   return (
     <>
       <h1>About us</h1>
@@ -8,4 +8,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default About;
