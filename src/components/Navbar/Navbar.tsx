@@ -30,7 +30,7 @@ function Navbar() {
       <ul>
         <li className="sparator-logo">
           <a href="/">
-            <img src={logo} alt="Mancos Gaming" width="50px" />
+            <img src={logo} alt="Mancos Gaming" width="60px" />
           </a>
         </li>
         {menuItems.map((menuItem, index) => (
