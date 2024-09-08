@@ -1,9 +1,12 @@
+import Navbar from "../../components/Navbar/Navbar";
 import Slideshow from "../../components/SlideShow/SlideShow";
 
 const About = () => {
   return (
     <>
-      <h1>About us</h1>
+      <Slideshow/>
+      <Navbar />
+      
     </>
   );
 };
