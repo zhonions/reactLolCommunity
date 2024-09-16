@@ -5,7 +5,7 @@ import sass from "sass";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base: mode === 'production' ? '/reactLolCommunity/' : '/', // Base de produção para GitHub Pages
+  base: mode === 'production' ? '/reactLolCommunity' : '/', // Base de produção para GitHub Pages
   css: {
     preprocessorOptions: {
       scss: {
