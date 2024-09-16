@@ -3,9 +3,9 @@ import react from "@vitejs/plugin-react-swc";
 import sass from "sass";
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base: "/reactLolCommunity",
+  base: mode === 'production' ? '/reactLolCommunity/' : '/', // Base de produção para GitHub Pages
   css: {
     preprocessorOptions: {
       scss: {
@@ -13,4 +13,4 @@ export default defineConfig({
       },
     },
   },
-});
+}));
