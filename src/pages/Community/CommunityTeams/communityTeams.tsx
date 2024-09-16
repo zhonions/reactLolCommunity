@@ -5,7 +5,7 @@ const CommunityTeams = () => {
   return (
     <>
       <Slideshow/>
-      <Navbar />
+      <Navbar />oi
     </>
   );
 };
