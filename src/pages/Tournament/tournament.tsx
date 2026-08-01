@@ -6,7 +6,7 @@ const Tournament = () => {
     <>
      <Slideshow/>
      <Navbar />
-      <h1>Toornament</h1>
+      <h1>Tournament</h1>
     </>
   );
 };

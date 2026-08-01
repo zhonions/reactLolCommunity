@@ -1,0 +1,79 @@
+.account-page {
+  min-height: calc(100vh - 76px);
+  display: grid;
+  place-items: center;
+  padding: 3rem 1.5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.82)), url("../../assets/images/lolback-slides.avif") center / cover;
+}
+
+.account-card {
+  width: min(100%, 28rem);
+  padding: 2rem;
+  border-top: 5px solid #fec601;
+  background: rgba(31, 32, 41, 0.94);
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.35);
+}
+
+.account-tabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: -2rem -2rem 2rem;
+}
+
+.account-tabs button {
+  padding: 1rem;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: #15161d;
+  color: #fff;
+  font: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.account-tabs button.active {
+  border-bottom-color: #fec601;
+  color: #fec601;
+}
+
+.account-card h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+
+.account-card form,
+.account-card label {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.account-card form {
+  gap: 1rem;
+}
+
+.account-card input {
+  padding: 0.8rem;
+  border: 1px solid #6f7180;
+  background: #fff;
+  color: #1f2029;
+  font: inherit;
+}
+
+.account-submit {
+  margin-top: 0.5rem;
+  padding: 0.85rem;
+  border: 2px solid #fec601;
+  background: transparent;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.account-submit:hover,
+.account-submit:focus-visible {
+  background: #fec601;
+  color: #1f2029;
+}

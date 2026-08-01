@@ -6,7 +6,7 @@ const TournamentPlayer = () => {
     <>
      <Slideshow/>
      <Navbar />
-      <h1>Toornament Player</h1>
+      <h1>Tournament Players</h1>
     </>
   );
 };

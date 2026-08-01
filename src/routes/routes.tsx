@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import News from "../pages/News/news";
-import Toornament from "../pages/Tournament/tournament";
+import Tournament from "../pages/Tournament/tournament";
 import Community from "../pages/Community/community";
 import About from "../pages/About/about";
 import Home from "../pages/Home/home";
@@ -8,6 +8,7 @@ import TournamentPlayer from "../pages/Tournament/TournamentPlayer/tournamentPla
 import TournamentTeams from "../pages/Tournament/TournamentTeams/tournamentTeams";
 import CommunityPlayer from "../pages/Community/CommunityPlayer/communityPlayer";
 import CommunityTeams from "../pages/Community/CommunityTeams/communityTeams";
+import Account from "../pages/Account/account";
 
 export const router = createBrowserRouter([
   {
@@ -24,14 +25,14 @@ export const router = createBrowserRouter([
   },
   {
     path: "/tournament",
-    element: <Toornament />,
+    element: <Tournament />,
   },
   {
-    path: "tournament/tournament-player",
+    path: "/tournament/tournament-player",
     element: <TournamentPlayer />,
   },
   {
-    path: "tournament/tournament-teams",
+    path: "/tournament/tournament-teams",
     element: <TournamentTeams />,
   },
   {
@@ -46,4 +47,10 @@ export const router = createBrowserRouter([
     path: "/community/community-teams",
     element: <CommunityTeams />,
   },
-]);
+  {
+    path: "/account",
+    element: <Account />,
+  },
+], {
+  basename: import.meta.env.BASE_URL,
+});

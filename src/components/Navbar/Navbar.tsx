@@ -1,6 +1,7 @@
 import "./Navbar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.svg";
 
 function Navbar() {
@@ -29,24 +30,24 @@ function Navbar() {
     <nav>
       <ul>
         <li className="sparator-logo">
-          <a href="/">
+          <Link to="/">
             <img src={logo} alt="Mancos Gaming" width="60px" />
-          </a>
+          </Link>
         </li>
-        {menuItems.map((menuItem, index) => (
+        {menuItems.map((menuItem) => (
           <li
-            key={index}
+            key={menuItem.link}
             className={menuItem.subItems ? "dropdown padding" : "padding"}>
-            <a href={menuItem.link}>
+            <Link to={menuItem.link}>
               {menuItem.title}
               {menuItem.subItems && <FontAwesomeIcon icon={faPlus} />}
-            </a>
+            </Link>
             {menuItem.subItems && (
               <div className="dropdown-content">
-                {menuItem.subItems.map((subItem, subIndex) => (
-                  <a key={subIndex} href={subItem.link}>
+                {menuItem.subItems.map((subItem) => (
+                  <Link key={subItem.link} to={subItem.link}>
                     {subItem.title}
-                  </a>
+                  </Link>
                 ))}
               </div>
             )}
@@ -55,9 +56,9 @@ function Navbar() {
       </ul>
       <ul>
         <li>
-          <button id="toggleModal" className="icon">
+          <Link className="icon" to="/account" aria-label="Open account page">
             <FontAwesomeIcon icon={faUser} size="xl" />
-          </button>
+          </Link>
         </li>
       </ul>
     </nav>
